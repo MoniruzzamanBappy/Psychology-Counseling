@@ -8,6 +8,8 @@ import {
   useSendPasswordResetEmail,
   useSignInWithEmailAndPassword,
 } from "react-firebase-hooks/auth";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
   const emailRef = useRef("");
@@ -32,8 +34,14 @@ const Login = () => {
   };
   const handleToForgotPassword = async () => {
     const email = emailRef.current.value;
-    await sendPasswordResetEmail(email);
-    alert("Sent email");
+    if(email){
+      await sendPasswordResetEmail(email);
+
+      toast("Email Sent");
+    }
+    else{
+      toast("Please Type Your Email");
+    }
   };
   if(error){
     errorElement = (
@@ -82,6 +90,7 @@ const Login = () => {
         </Button>
         <SocialLogin></SocialLogin>
       </Form>
+      <ToastContainer/>
     </div>
   );
 };
