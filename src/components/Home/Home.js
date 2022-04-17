@@ -38,7 +38,7 @@ const Home = () => {
           {services.slice(0, 3).map((service) => (
             <Services key={service.id} service={service}></Services>
           ))}
-          <button onClick={handleSeeMore}>See more</button>
+          <button  className=" btn btn-secondary w-50" onClick={handleSeeMore}>See All</button>
         </div>
       </div>
     </div>

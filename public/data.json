@@ -1,44 +1,80 @@
 [
-    {
-      "id": "625a64cd48fa486127ba5c73",
-      "price": "$327.69",
-      "img": "./images/couple.jpg",
-      "name": "Angelica",
-      "about": "Duis consequat eiusmod amet consequat adipisicing ea minim. Quis adipisicing occaecat magna reprehenderit velit consequat culpa excepteur ipsum. Cillum ullamco cupidatat excepteur fugiat tempor ullamco cupidatat eiusmod cupidatat deserunt nisi exercitation."
+  {
+    "id": "625a64cd48fa486127ba5c73",
+    "price": "$1000",
+    "steps": {
+      "step1": "Go In With an Open Mind",
+      "step2": "Understand That Couples Therapy",
+      "step3": "Discuss Your Goals Together",
+      "step4": "Commit for at Least 3-6 Months"
     },
-    {
-      "id": "625a64cde98602313cd49bac",
-      "price": "$238.07",
-      "img": "./images/depression.jpg",
-      "name": "Melisa",
-      "about": "Nulla enim irure laborum excepteur labore cupidatat esse laborum labore quis qui cillum id incididunt. Sint laboris qui dolore officia adipisicing excepteur adipisicing. Lorem irure officia do id enim laborum ipsum ex est non eu cillum veniam. Magna id anim nisi esse est anim. Fugiat reprehenderit sint eu consequat fugiat aliqua eiusmod consequat amet nostrud culpa excepteur eu Lorem. Dolore reprehenderit deserunt cupidatat excepteur aute cillum fugiat occaecat. Duis laboris veniam magna commodo do irure minim."
+    "img": "./images/couple.jpg",
+    "name": "Couples Counselling",
+    "about": "The idea of your first couples counseling session may seem daunting, especially if you have no idea what to expect. Counseling will. one another. Before you begin, it’s important to start. help you learn new ways to connect, trust, and support this process with an open mind. To make the most of your time, consider the main concerns you hope to address."
+  },
+  {
+    "id": "625a64cde98602313cd49bac",
+    "price": "$500",
+    "steps": {
+      "step1": "Anxious distress",
+      "step2": "Mixed features",
+      "step3": "Atypical features",
+      "step4": "Seasonal pattern"
     },
-    {
-      "id": "625a64cd160b3de1992b9e26",
-      "price": "$353.65",
-      "img": "./images/professional-help.jpg",
-      "name": "Ford",
-      "about": "Nostrud quis in adipisicing fugiat sint ex occaecat laborum ut labore quis velit ex. Velit officia est deserunt nulla aute ipsum magna commodo eiusmod consectetur ullamco enim commodo in. Excepteur sint nisi minim elit enim aute id ullamco commodo. Cupidatat nulla deserunt deserunt do sit in aute deserunt cupidatat adipisicing mollit. Non adipisicing sint laborum adipisicing veniam dolor veniam mollit Lorem reprehenderit. Pariatur veniam reprehenderit Lorem reprehenderit qui tempor nostrud velit sunt velit do."
+    "img": "./images/depression.jpg",
+    "name": "Depression Treatment",
+    "about": "Medications and psychotherapy are effective for most people with depression. Your primary care doctor or psychiatrist can prescribe medications to relieve symptoms. However, many people with depression also benefit from seeing a psychiatrist, psychologist or other mental health professional.If you have severe depression, you may need a hospital stay, or you may need to participate in an outpatient treatment program until your symptoms improve.Here's a closer look at depression treatment options."
+  },
+  {
+    "id": "625a64cd160b3de1992b9e26",
+    "price": "$500",
+    "steps": {
+      "step1": "Learn about your disorder",
+      "step2": "Learn time management techniques",
+      "step3": "Socialize",
+      "step4": "Stick to your treatment plan"
     },
-    {
-      "id": "625a64cdf161ee6a0a59dcb5",
-      "price": "$98.20",
-      "img": "./images/good-worker.jpg",
-      "name": "Freida",
-      "about": "Eiusmod culpa anim ut quis reprehenderit irure laborum magna tempor id sint anim id. Exercitation dolor exercitation eu nostrud. Commodo ullamco deserunt ex minim in aute sit consequat adipisicing ullamco reprehenderit. Exercitation anim cillum dolor eiusmod eu non sunt officia commodo officia eiusmod."
+    "img": "./images/professional-help.jpg",
+    "name": "Anti-anxiety Treatments",
+    "about": "You may start by seeing your primary care provider to find out if your anxiety could be related to your physical health. He or she can check for signs of an underlying medical condition that may need treatment.However, you may need to see a mental health specialist if you have severe anxiety. A psychiatrist is a medical doctor who specializes in diagnosing and treating mental health conditions. A psychologist and certain other mental health professionals can diagnose anxiety and provide counseling."
+  },
+  {
+    "id": "625a64cdf161ee6a0a59dcb5",
+    "price": "$900",
+    "steps": {
+      "step1": " Face and embrace",
+      "step2": " Practice effective communication",
+      "step3": " Create the habit ",
+      "step4": "Express gratitude"
     },
-    {
-      "id": "625a64cdae6620f74a0ef312",
-      "price": "$60.29",
-      "img": "./images/group-support.jpg",
-      "name": "Terra",
-      "about": "Est quis velit dolore officia deserunt. Ea occaecat exercitation minim et do do. Lorem dolore sit ipsum exercitation quis occaecat cupidatat ullamco sunt. Adipisicing eiusmod ullamco adipisicing adipisicing excepteur quis eu. Enim deserunt nostrud incididunt voluptate commodo ex do. Elit nisi commodo fugiat dolor incididunt aliqua consequat mollit mollit culpa commodo. Magna fugiat eiusmod officia aute amet veniam est sunt consequat velit do amet occaecat."
+    "img": "./images/good-worker.jpg",
+    "name": "Relationship Problems",
+    "about": "Troubled couples often ask this question in relationship or marriage counseling. Having exhausted all the tools in their toolbox, partners come to therapy as their last resort, feeling rather hopeless.Fixing a relationship doesn’t require a personality makeover, but it does take effort and energy to hone your communication skills and create deeper intimacy and connection. These five steps will start you on your way to repai."
+  },
+  {
+    "id": "625a64cdae6620f74a0ef312",
+    "price": "$600",
+    "steps": {
+      "step1": "Financial issues",
+      "step2": "Grief",
+      "step3": "Mental health concerns",
+      "step4": "Separation"
     },
-    {
-      "id": "625a64cd3d2a82ce400e43c4",
-      "price": "$69.53",
-      "img": "./images/personal.jpg",
-      "name": "Barton",
-      "about": "Voluptate aliquip et id veniam magna reprehenderit adipisicing elit amet nostrud aute. Officia id occaecat nulla consequat incididunt ipsum excepteur. Aliqua id quis adipisicing et nisi qui eu pariatur deserunt."
-    }
-  ]
+    "img": "./images/group-support.jpg",
+    "name": "Family Difficulties",
+    "about": "Whatever the source, distressing family dynamics can greatly interfere with the functioning of every family member, including extended family, although those living in the same household are likely to be impacted more significantly than those who live apart. When family members do not get along, the tension can impact each family member’s mental and physical health, relationships, and even his or her capacity for routine tasks. Evidence of family problems can materialize through repeated family conflicts, dramatic behavioral shifts in children and adolescents, mood swings and depression."
+  },
+  {
+    "id": "625a64cd3d2a82ce400e43c4",
+    "price": "$700",
+    "steps": {
+      "step1": "Adopt good habits",
+      "step2": "Create a plan",
+      "step3": "Learn to assert",
+      "step4": "Be kind and generous"
+    },
+    "img": "./images/personal.jpg",
+    "name": "Personal Development",
+    "about": "It's no secret that I'm a life coach and earning my doctorate in clinical psychology, and as you may guess from those identities alone, I'm passionate about helping people become the best versions of themselves. However, where I differ from many professionals in the world is that I practice what I preach. I do my best to continue my own personal development because I've seen how much it's improved my life and the lives of people around me. Despite struggling with depression in my adolescence and young adulthood, I am now embodying that which I knew I could become. I spent many years of my life ignoring my intuition."
+  }
+]
