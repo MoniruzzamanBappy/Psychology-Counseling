@@ -1,6 +1,6 @@
 import React from "react";
 import { useSignInWithFacebook, useSignInWithGithub, useSignInWithGoogle } from "react-firebase-hooks/auth";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { BsGoogle } from 'react-icons/bs';
 import { BsFacebook } from 'react-icons/bs';
 import { BsGithub } from 'react-icons/bs';
@@ -13,6 +13,8 @@ const SocialLogin = () => {
   const [signInWithGithub, user1, loading1, error1] = useSignInWithGithub(auth);
   const [signInWithFacebook, user2, loading2, error2] = useSignInWithFacebook(auth);
   const navigate = useNavigate();
+  const location = useLocation();
+  let from = location.state?.from?.pathname || "/";
   let errorElement;
   if (error || error1 || error2) {
     errorElement =  
@@ -24,7 +26,7 @@ const SocialLogin = () => {
     return <Loading></Loading>
   }
   if(user || user1 || user2){
-    navigate('/home')
+    navigate(from, { replace: true });
   }
 
   
