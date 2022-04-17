@@ -276,7 +276,22 @@ const AboutMe = () => {
             </div>
           </div>
         </div>
+        <p className="text-justify">
+          After completing this course, I wanted to put myself in web-development sector and become a well known Web Developer. And to achieving the goal I must give time to practice more and more.
+          And by doing this I will face some issues and the biggest challenge is to over come the situation.
+          As a Web developer, I want to be able to design Web pages that can effectively display material, provide interactivity, and be artistically pleasing to the user. In order to do this, I need to know the nuances of Web design and delivery and the various tools and software applications that I can use.
+        </p>
+        <h5>Procedure to achieve my goal</h5>
+        <ul>
+          <li>Continuity</li>
+          <li>Practice</li>
+          <li>Dedication</li>
+          <li>Motivation</li>
+          <li>Passion</li>
+          <li>support</li>
+        </ul>
       </div>
+
     </div>
   );
 };
