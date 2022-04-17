@@ -3,7 +3,9 @@ import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
+import CustomLinks from '../CustomLinks/CustomLinks';
 import auth from './../../firebase.init';
+import './Header.css'
 
 const Header = () => {
   const [user] = useAuthState(auth);
@@ -20,13 +22,11 @@ const Header = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link as={Link} to="/home">Home</Nav.Link>
-            <Nav.Link as={Link} to="/services">Services</Nav.Link>
-            <Nav.Link as={Link} className="blogs-btn rounded" eventKey={2} to='/blogs'>
-              Blogs
-            </Nav.Link>
-            <Nav.Link as={Link} to="/aboutme">About Me</Nav.Link>
-            {!user? <Nav.Link as={Link} to="/login">Login</Nav.Link>:
+            <CustomLinks to="/home">Home</CustomLinks>
+            <CustomLinks to="/services">Services</CustomLinks>
+            <CustomLinks  to='/blogs'>Blogs</CustomLinks>
+            <CustomLinks to="/aboutme">About Me</CustomLinks>
+            {!user? <CustomLinks className="login-btn rounded"  to="/login">Login</CustomLinks>:
             <button className="btn btn-link text-danger text-decoration-none" onClick={handleSignOut}>Sign Out</button>
             }
             
