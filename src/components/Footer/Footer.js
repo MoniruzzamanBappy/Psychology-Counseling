@@ -32,12 +32,12 @@ const Footer = () => {
         </div>
     </div>
 
-    <div className="d-flex container">
-        <p className="text-muted">Copyright © {new Date().getFullYear()}  Online service</p>
-        <div className="ms-auto footer-a">
-        <a className="text-white ps-5" href="/">Privacy Policy.</a>
-        <a className="text-white ps-5" href="/">Terms of Use</a>
-        <a className="text-white ps-5" href="/">Pricing</a>
+    <div className="row copyright container">
+        <p className="text-muted col-md-5 col-sm-3">Copyright © {new Date().getFullYear()}  Online service</p>
+        <div className="col-md-7 row col-sm-9  ms-auto footer-a">
+        <a className="text-white col-md-4 col-sm-12 ps-5" href="/">Privacy Policy.</a>
+        <a className="text-white col-md-4 col-sm-12 ps-5" href="/">Terms of Use</a>
+        <a className="text-white col-md-4 col-sm-12 ps-5" href="/">Pricing</a>
         </div>
     </div>
 
