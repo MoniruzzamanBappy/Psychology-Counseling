@@ -3,6 +3,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
 }
+
 .service-cont{
     display: grid;
     grid-template-columns: repeat(3, 1fr);

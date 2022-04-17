@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="container-fluid container text-md-left">
         <div className="row">
             <div className="col-md-6 mt-md-0 mt-3">
-                <img src='./ai.png' alt="" />
+                <img className='img-fluid' style={{height: '80px', width: '80px'}} src='./ai2.png' alt="" />
             </div>
 
             <hr className="clearfix w-100 d-md-none pb-0"/>
