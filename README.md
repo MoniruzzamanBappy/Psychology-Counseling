@@ -10,7 +10,7 @@ Live link of this project [Click Here](https://psychology-counseling-ebe1f.web.a
 * Find the info about Developer
 * Blogs about some fundamental authentication Q/A
 
-## List of Library and dependency's
+## List of Libraries and Frameworks
 * ReactJS
 * React Router
 * React Bootstrap
