@@ -3,11 +3,12 @@ import Treatment from "../Treatment/Treatment";
 import Banner from "./../Banner/Banner";
 import Services from "./../Services/Services";
 import "./Home.css";
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
   const [treat, setTreat] = useState([]);
-
   const [services, setServices] = useState([]);
+  const navigate = useNavigate();
   useEffect(() => {
     fetch("./treat.json")
       .then((res) => res.json())
@@ -19,6 +20,9 @@ const Home = () => {
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);
+  const handleSeeMore = ()=> {
+    navigate('/Services')
+  }
   return (
     <div>
       <Banner></Banner>
@@ -31,9 +35,10 @@ const Home = () => {
       <div>
         <h1 className="text-center">Services</h1>
         <div className="container service-cont my-4">
-          {services.map((service) => (
+          {services.slice(0, 3).map((service) => (
             <Services key={service.id} service={service}></Services>
           ))}
+          <button onClick={handleSeeMore}>See more</button>
         </div>
       </div>
     </div>
