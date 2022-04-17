@@ -18,12 +18,13 @@ const Signup = () => {
     useCreateUserWithEmailAndPassword(auth);
   const handleSignupSubmit = async(e)=>{
     e.preventDefault();
-    await sendEmailVerification();
+    
     const email = emailRef.current.value;
     const password = passRef.current.value;
     const confirmPass = confirmPassRef.current.value;
     if(password === confirmPass){
-      createUserWithEmailAndPassword(email, password);
+      await createUserWithEmailAndPassword(email, password);
+      await sendEmailVerification();
     }
     else{
       errorElement = (
