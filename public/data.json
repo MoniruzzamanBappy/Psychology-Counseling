@@ -1,0 +1,44 @@
+[
+    {
+      "id": "625a64cd48fa486127ba5c73",
+      "price": "$327.69",
+      "img": "./images/couple.jpg",
+      "name": "Angelica",
+      "about": "Duis consequat eiusmod amet consequat adipisicing ea minim. Quis adipisicing occaecat magna reprehenderit velit consequat culpa excepteur ipsum. Cillum ullamco cupidatat excepteur fugiat tempor ullamco cupidatat eiusmod cupidatat deserunt nisi exercitation."
+    },
+    {
+      "id": "625a64cde98602313cd49bac",
+      "price": "$238.07",
+      "img": "./images/depression.jpg",
+      "name": "Melisa",
+      "about": "Nulla enim irure laborum excepteur labore cupidatat esse laborum labore quis qui cillum id incididunt. Sint laboris qui dolore officia adipisicing excepteur adipisicing. Lorem irure officia do id enim laborum ipsum ex est non eu cillum veniam. Magna id anim nisi esse est anim. Fugiat reprehenderit sint eu consequat fugiat aliqua eiusmod consequat amet nostrud culpa excepteur eu Lorem. Dolore reprehenderit deserunt cupidatat excepteur aute cillum fugiat occaecat. Duis laboris veniam magna commodo do irure minim."
+    },
+    {
+      "id": "625a64cd160b3de1992b9e26",
+      "price": "$353.65",
+      "img": "./images/professional-help.jpg",
+      "name": "Ford",
+      "about": "Nostrud quis in adipisicing fugiat sint ex occaecat laborum ut labore quis velit ex. Velit officia est deserunt nulla aute ipsum magna commodo eiusmod consectetur ullamco enim commodo in. Excepteur sint nisi minim elit enim aute id ullamco commodo. Cupidatat nulla deserunt deserunt do sit in aute deserunt cupidatat adipisicing mollit. Non adipisicing sint laborum adipisicing veniam dolor veniam mollit Lorem reprehenderit. Pariatur veniam reprehenderit Lorem reprehenderit qui tempor nostrud velit sunt velit do."
+    },
+    {
+      "id": "625a64cdf161ee6a0a59dcb5",
+      "price": "$98.20",
+      "img": "./images/good-worker.jpg",
+      "name": "Freida",
+      "about": "Eiusmod culpa anim ut quis reprehenderit irure laborum magna tempor id sint anim id. Exercitation dolor exercitation eu nostrud. Commodo ullamco deserunt ex minim in aute sit consequat adipisicing ullamco reprehenderit. Exercitation anim cillum dolor eiusmod eu non sunt officia commodo officia eiusmod."
+    },
+    {
+      "id": "625a64cdae6620f74a0ef312",
+      "price": "$60.29",
+      "img": "./images/group-support.jpg",
+      "name": "Terra",
+      "about": "Est quis velit dolore officia deserunt. Ea occaecat exercitation minim et do do. Lorem dolore sit ipsum exercitation quis occaecat cupidatat ullamco sunt. Adipisicing eiusmod ullamco adipisicing adipisicing excepteur quis eu. Enim deserunt nostrud incididunt voluptate commodo ex do. Elit nisi commodo fugiat dolor incididunt aliqua consequat mollit mollit culpa commodo. Magna fugiat eiusmod officia aute amet veniam est sunt consequat velit do amet occaecat."
+    },
+    {
+      "id": "625a64cd3d2a82ce400e43c4",
+      "price": "$69.53",
+      "img": "./images/personal.jpg",
+      "name": "Barton",
+      "about": "Voluptate aliquip et id veniam magna reprehenderit adipisicing elit amet nostrud aute. Officia id occaecat nulla consequat incididunt ipsum excepteur. Aliqua id quis adipisicing et nisi qui eu pariatur deserunt."
+    }
+  ]

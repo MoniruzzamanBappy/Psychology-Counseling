@@ -1,0 +1,23 @@
+.treat-cont{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+.service-cont{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .treat-cont{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+    .service-cont{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+  }
