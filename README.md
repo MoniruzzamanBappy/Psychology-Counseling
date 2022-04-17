@@ -1,6 +1,6 @@
 # Psychology Counseling
 
-Live link of this project [Click Here](https://psychology-counseling-ebe1f.web.app/aboutme).
+Live link of this project [Click Here](https://psychology-counseling-ebe1f.web.app).
 
 ## About This Project
 * A psychiatrist help to develop mental health of her/his patient

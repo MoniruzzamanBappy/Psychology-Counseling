@@ -6,12 +6,12 @@ import {getAuth} from "firebase/auth"
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAy2Sm7wGJ5oW70sU9O_K4db925lo7WlSE",
-  authDomain: "psychology-counseling-ebe1f.firebaseapp.com",
-  projectId: "psychology-counseling-ebe1f",
-  storageBucket: "psychology-counseling-ebe1f.appspot.com",
-  messagingSenderId: "4087893160",
-  appId: "1:4087893160:web:c78cfc72ebd1224545069d"
+  apiKey: process.env.REACT_APP_apiKey,
+  authDomain: process.env.REACT_APP_authDomain,
+  projectId: process.env.REACT_APP_projectId,
+  storageBucket: process.env.REACT_APP_storageBucket,
+  messagingSenderId: process.env.REACT_APP_messagingSenderId,
+  appId: process.env.REACT_APP_appId
 };
 
 // Initialize Firebase
