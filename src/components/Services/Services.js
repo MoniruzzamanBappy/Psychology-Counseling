@@ -4,10 +4,10 @@ import { BsFillCheckCircleFill } from 'react-icons/bs';
 import { useNavigate } from "react-router-dom";
 
 const Services = ({ service }) => {
-  const { name, img, price, steps } = service;
+  const { name,id,  img, price, steps } = service;
   const navigate = useNavigate();
-  const handleBookNow = ()=> {
-    navigate("/checkout");
+  const handleBookNow = (id)=> {
+    navigate(`/checkout/${id}`);
   }
   return (
     <Card>
@@ -21,7 +21,7 @@ const Services = ({ service }) => {
         <Card.Text><BsFillCheckCircleFill/><span className='ps-2'>{steps.step4}</span></Card.Text>
       </Card.Body>
       <Card.Footer>
-        <button onClick={handleBookNow} className=" btn btn-primary w-100">Book Now</button>
+        <button onClick={()=>handleBookNow(id)} className=" btn btn-primary w-100">Book Now</button>
       </Card.Footer>
     </Card>
   );
