@@ -16,7 +16,7 @@ const Header = () => {
         <Navbar sticky="top" collapseOnSelect expand="lg" bg="light" variant="light">
       <Container>
         <Navbar.Brand as={Link} to='/home'>
-            <img className="img-fluid pe-2" src='./brain.png' alt="" />
+            <img className="img-fluid pe-2" src='brain.png' alt="" />
             Psychology Counseling
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />

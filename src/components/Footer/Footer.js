@@ -6,8 +6,8 @@ const Footer = () => {
         <footer className="page-footer text-white  bg-dark font-small blue pt-4">
     <div className="container-fluid container text-md-left">
         <div className="row">
-            <div className="col-md-6 mt-md-0 mt-3">
-                <img className='img-fluid' style={{height: '80px', width: '80px'}} src='./ai2.png' alt="" />
+            <div className="col-md-6 align-items-center d-flex mt-md-0 mt-3">
+                <img className=' img-fluid' style={{height: '80px', width: '80px'}} src='ai2.png' alt="" />
             </div>
 
             <hr className="clearfix w-100 d-md-none pb-0"/>
@@ -16,7 +16,7 @@ const Footer = () => {
                 <ul className="list-unstyled">
                     <li><a className="nav-link text-white" href="#!">About Online service</a></li>
                     <li><a className="nav-link text-white" href="#!">Read our Blog</a></li>
-                    <li><a className="nav-link text-white" href="#!">Signup to Deliver</a></li>
+                    <li><a className="nav-link text-white" href="#!">Signup to be Happy</a></li>
                     <li><a className="nav-link text-white" href="#!">Add your list</a></li>
                 </ul>
             </div>
@@ -25,7 +25,7 @@ const Footer = () => {
                 <ul className="list-unstyled">
                     <li><a className="nav-link text-white" href="#!">Get Helps</a></li>
                     <li><a className="nav-link text-white" href="#!">Read FAQs</a></li>
-                    <li><a className="nav-link text-white" href="#!">View All cities</a></li>
+                    <li><a className="nav-link text-white" href="#!">View All Services</a></li>
                     <li><a className="nav-link text-white" href="#!">Branches near me</a></li>
                 </ul>
             </div>
