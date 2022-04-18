@@ -56,10 +56,10 @@ const Login = () => {
   return (
     <div className="login-form mt-0 pt-0">
       <h1 className="text-center">Please Login</h1>
-      <Form onSubmit={handleLoginSubmit} className="w-25 log-container mx-auto">
+      <Form onSubmit={handleLoginSubmit} className="container log-container mx-auto">
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
-          <Form.Control ref={emailRef} type="email" placeholder="Enter email" />
+          <Form.Control ref={emailRef} type="email" required placeholder="Enter email" />
           <Form.Text className="text-muted">
             We'll never share your email with anyone else.
           </Form.Text>
@@ -67,7 +67,7 @@ const Login = () => {
 
         <Form.Group className="mb-3" controlId="formBasicPassword">
           <Form.Label>Password</Form.Label>
-          <Form.Control ref={passRef} type="password" placeholder="Password" />
+          <Form.Control ref={passRef} type="password" required placeholder="Password" />
         </Form.Group>
         <p className="mt-3">
           Dont have an account?{" "}

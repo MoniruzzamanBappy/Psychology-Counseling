@@ -5,12 +5,16 @@ import { useNavigate } from 'react-router-dom';
 import auth from './../../firebase.init';
 import SocialLogin from './../SocialLogin/SocialLogin';
 import Loading from './../Loading/Loading';
+import { useLocation } from 'react-router-dom';
 
 const Signup = () => {
+  const [match, setMatch] = useState('');
   const [agree, setAgree] = useState(false);
   const emailRef = useRef("");
   const passRef = useRef("");
   let errorElement;
+  const location = useLocation();
+  let from = location.state?.from?.pathname || "/";
   const confirmPassRef = useRef("");
   const [sendEmailVerification, sending, error1] = useSendEmailVerification(auth);
   const navigate = useNavigate();
@@ -22,16 +26,15 @@ const Signup = () => {
     const email = emailRef.current.value;
     const password = passRef.current.value;
     const confirmPass = confirmPassRef.current.value;
-    if(password === confirmPass){
-      await createUserWithEmailAndPassword(email, password);
-      await sendEmailVerification();
+    if(password !== confirmPass){
+      setMatch("Password didn't match");
+            return;
+      
     }
     else{
-      errorElement = (
-        <div>
-          <p className="text-danger">Error: Password doesn't match</p>
-        </div>
-      );
+      setMatch('');
+      await createUserWithEmailAndPassword(email, password);
+      await sendEmailVerification();
     }
   }
   if(sending || loading){
@@ -40,29 +43,29 @@ const Signup = () => {
   if(error || error1){
     errorElement = (
       <div>
-        <p className="text-danger">Error: {error?.message}</p>
+        <p className="text-danger">Error: {error?.message} {error1.message}</p>
       </div>
     );
   }
   if(user){
-    navigate('/home')
+    navigate(from, { replace: true });
   }
   return (
     <div className="login-form">
       <h1 className="text-center">Please Create an Account</h1>
-      <Form onSubmit={handleSignupSubmit} className="w-25 log-container mx-auto">
+      <Form onSubmit={handleSignupSubmit} className="container log-container mx-auto">
         <Form.Group className="mb-2" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
-          <Form.Control ref={emailRef} type="email" placeholder="Enter email" />
+          <Form.Control ref={emailRef} type="email" required placeholder="Enter email" />
         </Form.Group>
 
         <Form.Group className="mb-2" controlId="formBasicPassword">
           <Form.Label>Password</Form.Label>
-          <Form.Control ref={passRef} type="password" placeholder="Password" />
+          <Form.Control ref={passRef} type="password" required placeholder="Password" />
         </Form.Group>
-        <Form.Group className="mb-2" controlId="formBasicPassword">
+        <Form.Group className="mb-2" controlId="formBasicConfirmPassword">
           <Form.Label>Confirm Password</Form.Label>
-          <Form.Control ref={confirmPassRef} type="password" placeholder="Confirm Password" />
+          <Form.Control ref={confirmPassRef} type="password" required placeholder="Confirm Password" />
         </Form.Group>
         <Form.Group 
         onClick={() => setAgree(!agree)}
@@ -73,6 +76,7 @@ const Signup = () => {
             label="Accept Terms and Conditions"
           />
         </Form.Group>
+        <p className='text-danger'>{match}</p>
         {errorElement}
         <Button disabled={!agree} className="w-100" variant="primary" type="submit">
           Sign Up

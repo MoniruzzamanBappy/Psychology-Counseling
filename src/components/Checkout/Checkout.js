@@ -14,29 +14,29 @@ const Checkout = () => {
       <Row className="mb-3">
         <Form.Group as={Col} controlId="formGridEmail">
           <Form.Label>First Name</Form.Label>
-          <Form.Control type="text" placeholder="Enter name" />
+          <Form.Control required type="text" placeholder="Enter name" />
         </Form.Group>
 
         <Form.Group as={Col} controlId="formGridPassword">
           <Form.Label>Last Name</Form.Label>
-          <Form.Control type="text" placeholder="Enter name" />
+          <Form.Control required type="text" placeholder="Enter name" />
         </Form.Group>
       </Row>
 
       <Form.Group className="mb-3" controlId="formGridAddress1">
         <Form.Label>Address</Form.Label>
-        <Form.Control placeholder="Area, City, Country" />
+        <Form.Control required placeholder="Area, City, Country" />
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formGridAddress2">
         <Form.Label>Address 2</Form.Label>
-        <Form.Control placeholder="Apartment, studio, or floor" />
+        <Form.Control required placeholder="Apartment, studio, or floor" />
       </Form.Group>
 
       <Row className="mb-3">
         <Form.Group as={Col} controlId="formGridCity">
           <Form.Label>City</Form.Label>
-          <Form.Control />
+          <Form.Control required/>
         </Form.Group>
 
         <Form.Group as={Col} controlId="formGridState">
@@ -58,7 +58,7 @@ const Checkout = () => {
 
         <Form.Group as={Col} controlId="formGridZip">
           <Form.Label>Zip</Form.Label>
-          <Form.Control />
+          <Form.Control required />
         </Form.Group>
       </Row>
 
@@ -108,7 +108,7 @@ const Checkout = () => {
         </Form.Group>
       </fieldset>
       <Form.Group className="mb-3" id="formGridCheckbox">
-        <Form.Check type="checkbox" label="Check me out" />
+        <Form.Check required type="checkbox" label="Check me out" />
       </Form.Group>
       
       <Button variant="primary" type="submit">
